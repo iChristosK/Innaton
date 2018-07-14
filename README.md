@@ -10,8 +10,6 @@ http://www.virgingalactic.com
 
 Use that.
 
-
-
 Team 
 Faces 
 Description that takes you to their website.
