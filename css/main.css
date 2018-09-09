@@ -966,8 +966,9 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #793ea5;
-  border-color: #793ea5;
+    /*changes made here*/
+background: rgba(15, 195, 236, 0.66);
+border-color: #2ba0a5;
   color: #FFFFFF;
 }
 
