@@ -2127,7 +2127,7 @@ body.menu-is-open {
 /* Control the right side */
 .right {
     right: 0;
-    background-color: red;
+    background-color: #111;
 }
 
 /* If you want the content centered horizontally and vertically */
