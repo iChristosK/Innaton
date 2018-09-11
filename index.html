@@ -181,9 +181,49 @@
                          <h3 class="subhead">TEAM</h3>
                          
                          
+                         
                          <!-- START HERE FOR PERSON IN LINKEDIN -->
                          
                          <h3>
+                             <!-- 5.ADDED CODE HERE FOR SPLIT SCREEN-->
+                             <style>
+                                
+                             
+                             .split {
+                                 height: 100%;
+                                 width: 50%;
+                                
+                                 z-index: 1;
+                                 top: 0;
+                                 overflow-x: hidden;
+                                
+                             }
+                             
+                             .left {
+                                 left: 0;
+                                 background-color: #111;
+                             }
+                             
+                             .right {
+                                 right: 0;
+                                 background-color: red;
+                             }
+                             
+                             .centered {
+                                 position: absolute;
+                                 top: 50%;
+                                 left: 50%;
+                                 transform: translate(-50%, -50%);
+                                 text-align: center;
+                             }
+                             
+                             .centered img {
+                                 width: 150px;
+                                 border-radius: 50%;
+                             }
+                             </style>
+                             <!-- 5.END OF ADDED CODE -->
+                             
                              <li>
                                  <a href= "https://www.linkedin.com/in/waelmas/" > Wael Al Masri <i class= "fab fa-linkedin"> </i></a>
                                  
@@ -196,9 +236,14 @@
                              }
                          </style>
                          
+                         
+                         
+                         <div class="split left"> <!-- 5.ADDED  SPLIT -->
+                             <div class="centered"> <!-- 5.ADDED  SPLIT -->
                          <img class = "wael" src="/images/portfolio/wael.jpg" alt="wael-almasri" style="width:150px;height:150px;">
-                             
-                             
+                             </div> <!-- 5.ADDED  SPLIT -->
+                         </div> <!-- 5.ADDED  SPLIT -->
+                         
                              <h3> Founder </h3>
                              
                              <p>
@@ -224,9 +269,12 @@
                             }
                         </style>
                         
+                        <div class="split right"> <!-- 5.ADDED  SPLIT -->
+                            <div class="centered"> <!-- 5.ADDED  SPLIT -->
                         <img class = "christos" src="/images/portfolio/ck.jpg" alt="Christos-Katomoniatis" style="width:150px;height:150px;">
+                            </div><!-- 5.ADDED  SPLIT -->
+                        </div><!-- 5.ADDED  SPLIT -->
                             
-                                
                         <h3> Software Developer </h3>
                         
                         <p>
