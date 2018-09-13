@@ -510,22 +510,40 @@
             
             <div class="row section-header bit-narrow" data-aos="fade-up">
                 <div class="col-full">
-                    <center><h3 class="subhead"  > Competition </h3></center>
-                   <h1 class="display-1">
-                        <!-- Innovative products </br>
-                         We take pride in what we do.</br>-->
-                        <left><h1 data-aos="fade-up" > Embr wave</h1></left>
-                        <left><img  class = "wave" data-aos="fade-up" src="/images/portfolio/wave.jpg" alt="wave" style="width:250px;height:250px;"></left>
-                        <right><h1 data-aos="fade-up" > Quantlet </h1></right>
-                        <right><img class = "wave" data-aos="fade-up" src="/images/portfolio/qua.jpg" alt="qua" style="width:250px;height:250px;"></right>
+                    <center><h3 class="subhead"> Competition </h3></center>
+                    
+                   <div class="rowrow">
+                       <div class="columnc">
+                        <h1 data-aos="fade-up" > Embr wave</h1>
+                        <img  class = "wave" data-aos="fade-up" src="/images/portfolio/wave.jpg" alt="wave" style="width:250px;height:250px;">
+                        </div>
+                       
+                       <div class="columnc">
+                        <h1 data-aos="fade-up" > Quantlet </h1>
+                        <img class = "wave" data-aos="fade-up" src="/images/portfolio/qua.jpg" alt="qua" style="width:250px;height:250px;">
+                        </div>
+                       </div>
+                        
+                        
                         <style>
                             .wave {
                                 border-radius: 10%;
                             }
+                        
+                            .columnc {
+                            float: left;
+                            width: 50%;
+                            padding: 5px;
+                            }
+                        
+                            /* Clear floats after image containers */
+                            .rowrow::after {
+                            content: "";
+                            clear: both;
+                            display: table;
+                        }
                         </style>
                      
-                        
-                    </h1>
                 </div>
             </div> <!-- end section-header -->
     </section> <!-- end s-services -->
