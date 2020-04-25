@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://raw.githubusercontent.com/iChristosK/Innaton/ https://covid-bot.com/ https://raw.githubusercontent.com/waelmas/covid-bot/master/static/covid-embed.js https://raw.githubusercontent.com/waelmas/covid-bot/master/static/covid-embed.css https://raw.githubusercontent.com/waelmas/covid-bot/master/static/img/">
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -835,7 +834,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-<link rel="stylesheet" href="https://rawcdn.githack.com/waelmas/covid-bot/469e7bd17f9069fd39cdbb22612bbef728805be9/static/covid-embed.css">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/waelmas/covid-bot/469e7bd17f9069fd39cdbb22612bbef728805be9/static/covid-embed.css">
 
     <div class="covid-out" id="covid-bot-outer">
        
@@ -843,8 +842,12 @@
         <a href="javascript:closeFrame();"><img style="max-width: 5%; float: right;" src="https://github.com/waelmas/covid-bot/blob/master/static/img/close.png?raw=true">
         </a>
 
-        <iframe id="covid-frame"  src="" scrolling="yes" class="embedded-chat">
-        </iframe>
+       <!--  <iframe id="covid-frame"  src="" scrolling="yes" class="embedded-chat">
+        </iframe> -->
+        <object id="covid-frame-main" data="https://covid-bot.com/" class="embedded-chat">
+            <embed id="covid-frame" src="https://covid-bot.com/" class="embedded-chat"> </embed>
+            Error: Embedded data could not be displayed.
+        </object>
     
         </div>
         </div>
@@ -852,5 +855,4 @@
 <div id="covid-chat" class="covid-chat"> <a href="javascript:openFrame();"><img class="chat-icon" style="max-width: 5%; float: right;" src="https://github.com/waelmas/covid-bot/blob/master/static/img/covid-chat.png?raw=true">
 </a></div>
 <script src="https://rawcdn.githack.com/waelmas/covid-bot/808f824d00ad53532c294cc739dccf24ffd6bdea/static/covid-embed.js"></script>
-
 </body>
