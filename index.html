@@ -842,12 +842,20 @@
         <a href="javascript:closeFrame();"><img style="max-width: 5%; float: right;" src="https://github.com/waelmas/covid-bot/blob/master/static/img/close.png?raw=true">
         </a>
 
-       <!--  <iframe id="covid-frame"  src="" scrolling="yes" class="embedded-chat">
-        </iframe> -->
-        <object type="text/html" id="covid-frame" data="https://covid-bot.com/" class="embedded-chat" allowScriptAccess="sameDomain">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/waelmas/covid-bot/469e7bd17f9069fd39cdbb22612bbef728805be9/static/covid-embed.css">
+
+    <div class="covid-out" id="covid-bot-outer">
+       
+        <div style="height: 100%;">
+        <a href="javascript:closeFrame();"><img style="max-width: 5%; float: right;" src="https://github.com/waelmas/covid-bot/blob/master/static/img/close.png?raw=true">
+        </a>
+
+        <iframe id="covid-frame"  src="" scrolling="yes" class="embedded-chat" sandbox="allow-scripts">
+        </iframe> 
+        <!--<object type="text/html" id="covid-frame" data="https://covid-bot.com/" class="embedded-chat" allowScriptAccess="sameDomain">
            
         </object>
-    
+    -->
         </div>
         </div>
 
