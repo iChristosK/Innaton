@@ -269,7 +269,7 @@
 	<div class="covidbot-iframe-holder" style="height: 100%;">
 		<a href="javascript:closeFrame();"><img class="close-image" src="https://covid-bot.com/static/assets/img/close2.png">
 		</a>
-		<iframe id="covid-frame" src="https://covidbot.bluebots.io/en/" scrolling="yes" class="embedded-chat" sandbox="allow-scripts allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation">
+		<iframe id="covid-frame" src="https://" scrolling="yes" class="embedded-chat" sandbox="allow-scripts allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation">
 		</iframe>
 	</div>
 </div>
@@ -285,16 +285,22 @@
 		document.getElementById("covid-chat").style.display = "block";
 	}
 	function openFrame() {
-		var lang = window.location.pathname;
-		console.log(lang);
-		if (lang == "gr"){
-			lang = "el";
-		} else if (!lang){
+		var path = window.location.pathname;
+		var language = path.split("/");
+		var lang = language[0];
+		lang = lang.replaceAll("/", "");
+		
+		if (lang == "" || !lang || lang == " "){
 			lang = "en";
+		} else if (lang == "gr"){
+			lang = "el";
 		}
+		console.log(lang);
 		var current_url = document.getElementById("covid-frame").src;
-		if (current_url == "" || current_url == "https://"){
+		console.log(current_url);
+		if (current_url == "" || current_url == "https://" || current_url == "https:"){
 			document.getElementById("covid-frame").src = "https://covidbot.bluebots.io/" + lang + "/";
+			console.log("https://covidbot.bluebots.io/" + lang + "/");
 		}
 		document.getElementById("covid-bot-outer").style.display = "block";
 		document.getElementById("covid-chat").style.display = "none";
