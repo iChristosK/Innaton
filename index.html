@@ -269,7 +269,7 @@
 	<div class="covidbot-iframe-holder" style="height: 100%;">
 		<a href="javascript:closeFrame();"><img class="close-image" src="https://covid-bot.com/static/assets/img/close2.png">
 		</a>
-		<iframe id="covid-frame" src="https://" scrolling="yes" class="embedded-chat" sandbox="allow-scripts allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation">
+		<iframe id="covid-frame" src="https://covidbot.bluebots.io/en/" scrolling="yes" class="embedded-chat" sandbox="allow-scripts allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation">
 		</iframe>
 	</div>
 </div>
@@ -288,9 +288,9 @@
 		var lang = window.location.pathname;
 		console.log(lang);
 		if (lang == "gr"){
-			lang = "el"
+			lang = "el";
 		} else if (!lang){
-			lang = "en"
+			lang = "en";
 		}
 		var current_url = document.getElementById("covid-frame").src;
 		if (current_url == "" || current_url == "https://"){
